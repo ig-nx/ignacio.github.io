@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ignacio Leyton — Portafolio</title>
+<style>
+:root{
+  --bg:#0b0f17; --card:#121826; --muted:#9aa4b2;
+  --neon:#00e5ff; --neon2:#9a00ff; --txt:#e6edf3;
+}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(1200px 600px at 10% 0%,rgba(154,0,255,.12),transparent),radial-gradient(800px 400px at 90% 20%,rgba(0,229,255,.10),transparent),var(--bg);color:var(--txt);font:500 16px/1.6 system-ui,Roboto,Segoe UI,Arial}
+a{color:var(--neon);text-decoration:none} a:hover{opacity:.9}
+.wrap{max-width:980px;margin:0 auto;padding:28px}
+.nav{display:flex;gap:18px;justify-content:flex-end;margin-bottom:12px}
+h1{font-size:40px;margin:6px 0 10px}
+h2{font-size:22px;margin:28px 0 10px}
+.tag{display:inline-block;border:1px solid rgba(0,229,255,.35);color:var(--neon);padding:6px 10px;margin:6px 6px 0 0;border-radius:999px;background:rgba(0,229,255,.06);backdrop-filter:blur(6px)}
+.card{background:linear-gradient(180deg,rgba(154,0,255,.10),rgba(0,0,0,.0)) ,var(--card);border:1px solid rgba(154,0,255,.25);border-radius:16px;padding:18px;margin:18px 0;box-shadow:0 0 0 1px rgba(0,229,255,.08),0 10px 30px rgba(0,0,0,.35)}
+.hr{height:1px;background:linear-gradient(90deg,transparent,var(--neon),transparent);border:0;margin:20px 0;opacity:.4}
+.cta{display:inline-block;padding:10px 16px;border-radius:12px;background:linear-gradient(90deg,var(--neon),var(--neon2));color:#001018;font-weight:700}
+footer{opacity:.7;margin:30px 0 10px}
+.small{color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav small">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyecto</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <header>
+      <h1>Ignacio Leyton</h1>
+      <div class="small">Automatización de procesos · IA aplicada · n8n · Python</div>
+      <div class="hr"></div>
+    </header>
+
+    <section id="sobre-mi" class="card">
+      <h2>Resumen</h2>
+      <p>
+        Ingeniero Industrial orientado a <strong>automatizar procesos</strong> y construir
+        soluciones con <strong>Inteligencia Artificial</strong>. Me especializo en
+        <strong>n8n</strong> y <strong>Python</strong> para orquestar flujos, integrar APIs
+        y crear asistentes con recuperación de conocimiento (RAG).
+        Primer portafolio. En evolución continua.
+      </p>
+      <p class="small">Disponibilidad: remoto · proyectos freelance o part-time.</p>
+    </section>
+
+    <section id="habilidades" class="card">
+      <h2>Habilidades</h2>
+      <div>
+        <span class="tag">Python</span>
+        <span class="tag">n8n</span>
+        <span class="tag">RAG · embeddings</span>
+        <span class="tag">APIs REST</span>
+        <span class="tag">Git/GitHub</span>
+        <span class="tag">SQL básico</span>
+        <span class="tag">HTML · CSS · JS básico</span>
+        <span class="tag">Scrum/Kanban</span>
+      </div>
+    </section>
+
+    <section id="proyectos" class="card">
+      <h2>Proyecto: FAQ Bot RAG</h2>
+      <p>
+        Asistente de preguntas frecuentes para una empresa. Usa
+        <strong>RAG</strong> con un índice de documentos de FAQ y flujo de
+        <strong>n8n</strong> para ingestión y consulta. Python procesa texto,
+        limpia datos y crea embeddings. Responde en lenguaje natural con
+        citas a las fuentes.
+      </p>
+      <ul class="small">
+        <li><strong>Pipeline:</strong> carga CSV/PDF → limpieza → embeddings → vector DB → consulta + generación.</li>
+        <li><strong>n8n:</strong> cron, webhooks, control de versiones y logs de ejecución.</li>
+        <li><strong>Valor:</strong> reduce tiempos de soporte y estandariza respuestas.</li>
+        <li><strong>Próximo:</strong> panel simple para subir nuevas FAQs y reindexar.</li>
+      </ul>
+      <!-- Reemplaza los # cuando tengas repos o demo -->
+      <p><a class="cta" href="#" target="_blank" rel="noopener">Ver código</a></p>
+    </section>
+
+    <section id="contacto" class="card">
+      <h2>Contacto</h2>
+      <p>
+        Envíame mensaje por LinkedIn:
+        <a href="https://www.linkedin.com/in/ig-nx/" target="_blank" rel="noopener">linkedin.com/in/ig-nx</a>
+      </p>
+    </section>
+
+    <footer class="small">© Ignacio Leyton</footer>
+  </div>
+</body>
+</html>
